@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle | Level 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="beginner.css">
+    <script src="beg1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">MPR</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li class="active"><a href="../../MathPuzzle/math.html">Math puzzles</a></li>
+            <li><a href="../../Riddles/riddle.html">Riddles</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="question-number"><p id="current_no"></p></div><hr>
+        <div class="question" id="pop_up">
+            <div class="ques">Find the missing number.</div>
+            <table class="center">
+                <tr>
+                    <td id="option1"></td>
+                    <td id="option2"></td>
+                    <td id="option3"></td>
+                </tr>
+                <tr>
+                    <td id="option4"></td>
+                    <td id="option5"></td>
+                    <td id="option6"></td>
+                </tr>
+                <tr>
+                    <td id="option7"></td>
+                    <td id="option8"></td>
+                    <td id="option9"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="enter-ans">
+            <input id="numb" class="input-ans" type="number">
+            <button id="submit">Submit</button>
+            <div class="hid">Wrong</div>
+        </div><hr>
+        <div class="hint">
+            <button class="solution">Solution</button>
+            <div class="hint1">
+                <div class="solution-conf">If you accept the solution than your score will be zero</div>
+                <button class="ok">Ok</button>
+            </div>
+            <div class="answers"></div>
+        </div>
+    </div>
+    <div class="next-prev">
+        <!--<a href="#" class="previous round">&#8249;</a>-->
+        <a href="beg1.html" class="previous">Level 1</a>
+        <a href="beg2.html" class="next round">&#8250;</a>
+    </div>
+    <footer>
+            <div class="cpd">SUNIL KUMAR YADAV &copy; 2020-21</div>
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+    question();
+</script>
